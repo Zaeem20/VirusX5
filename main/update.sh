@@ -35,7 +35,6 @@ cd $HOME
 rm -rf VirusX5
 git clone https://github.com/Zaeem20/VirusX5
 cd VirusX5
-unzip VirusX5.zip
 chmod +x *
 
 echo -e "$C                        SucessFully Updated VirusX5 $E"
