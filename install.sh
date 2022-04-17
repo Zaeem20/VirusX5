@@ -14,4 +14,5 @@ apt install python2 -y
 pkg install git -y
 pkg install php -y
 pkg install python3 -y
+pip install -r requirements -y
 
