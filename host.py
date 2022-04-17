@@ -12,15 +12,17 @@ app = Flask(__name__)
 
 URL_REGEX = 'http[s]?:\/\/([a-z0-9]*[\.]?[a-z0-9_]+\.[\w]+)[\/]?.*'
 
+supported_platform = check_platform()
+
 #colours
-if not check_platform():
+if supported_platform:                 
     red = '\033[1;31m'
     pur='\033[35m'
     cyan='\033[1;36m'
     grn='\033[1;92m'
     end='\033[0m'
     br = '\033[1;77m'
-else:
+else:                       #Disabled colors for Windows
     red = pur = cyan = grn = br = end = ''
 
 #Credits
