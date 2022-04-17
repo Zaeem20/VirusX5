@@ -21,8 +21,6 @@ def get_version() -> float:
         return float(version)
 
 
-
-print(get_version())
                                 #INTRO
 
 print(G)
@@ -41,28 +39,10 @@ if float(REQUEST) > get_version():
     time.sleep(1.5)
     answer = input('\n\033[1;92m[\033[0m\033[1;77m*\033[0m\033[1;92m] Would You Like To Update VirusX5 Y/n: \033[0m').lower()
     if answer == 'y':
-        os.system('git pull .')
+        os.system('git checkout . && git pull ')
         print('Updated successfully')
     elif answer == 'n':
         print(f'{R}Aborting Update{E}')
 
 else:
     print(f"{R}                          No Update Found!!!   {E}")
-# print( "$G                          Updating VirusX5  $E"
-# cd $HOME
-# rm -rf VirusX5
-# git clone https://github.com/Zaeem20/VirusX5
-# cd VirusX5
-# chmod +x *
-
-# print( "$C                        SucessFully Updated VirusX5 $E"
-# echo 
-# print( "$G                           Returning to VirusX5 $E"
-# time.sleep(1.5)
-# bash Virus.sh
-
-# else
-# exit
-# clear && cd
-
-# fi
