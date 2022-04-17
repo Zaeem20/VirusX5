@@ -15,7 +15,7 @@ chmod +x *
 
 bash install.sh (It will install all tool that required)...
 
-pip2 install -r requirements.txt
+pip3 install -r requirements.txt
 
 bash Virus.sh
 
